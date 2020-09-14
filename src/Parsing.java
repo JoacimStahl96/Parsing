@@ -30,14 +30,14 @@ public class Parsing {
 
 			e.printStackTrace();
 		}
-		List<String> personsWithA = new ArrayList<String>(); // create new ArrayList to get the size of people with 'a'
-																// in their name.
+		List<String> personsWithA = new ArrayList<String>(); // create new ArrayList to get the size of people with 'a' in their name.
+															 
 
 		for (int i = 0; i < entireFile.size(); i++) { // loop once through the file
 
 			List<String> columnsPersonsA = entireFile.get(i); // records.get(i) to check every single row
-			if (columnsPersonsA.get(1).toLowerCase().contains("a")) { // specifies the column to be scanned for the
-																		// condition
+			if (columnsPersonsA.get(1).toLowerCase().contains("a")) { // specifies the column to be scanned for the condition
+																		 
 				personsWithA.add(columnsPersonsA.get(1)); // if 'a' is found, add to the APersons ArrayList size
 
 			}
@@ -81,8 +81,8 @@ public class Parsing {
 
 		for (int i = 0; i < entireFile.size(); i++) {
 			List<String> duplicateTimeStamps = entireFile.get(i); // grabs the information from entireFile
-			if (duplicateTimes.contains(duplicateTimeStamps.get(0))) { // duplicateTimes checks through
-																		// duplicateTimeStamps after it's own values
+			if (duplicateTimes.contains(duplicateTimeStamps.get(0))) { // duplicateTimes checks through duplicateTimeStamps after it's own values
+																		 
 				firstName = duplicateTimeStamps.get(1); // grabs the names that fits into the duplicateTimes condition
 				names1.add(firstName); // the names are taken into an ArrayList
 				secondName = duplicateTimeStamps.get(2); // grabs the names that fits into the duplicateTimes condition
